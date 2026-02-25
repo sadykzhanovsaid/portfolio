@@ -1,6 +1,7 @@
 import React, {useState} from "react"
 import "./Header.css"
 
+import Gradient from "@/assets/images/layout/header/gradient.png"
 import LogoIcon from "@/assets/images/layout/header/logo.svg?react"
 import MoreIcon from "@/assets/images/layout/header/more.svg?react"
 import LinkedInIcon from "@/assets/images/layout/header/linkedin.svg?react"
@@ -14,47 +15,53 @@ function Header() {
     const [theme, setTheme] = useState(false)
 
     return (
-        <header className="header">
-            <div className="container">
-                <div className="header__box">
-                    <div className="header__content">
-                        <div className="header__logo">
-                            <LogoIcon/>
+        <>
+            <div className="header__gradient">
+                <img src={Gradient} alt="gradient"/>
+            </div>
+
+            <header className="header">
+                <div className="container">
+                    <div className="header__box">
+                        <div className="header__content">
+                            <div className="header__logo">
+                                <LogoIcon/>
+                            </div>
+
+                            <ul className="header__list">
+                                <li className="header__item">About</li>
+                                <li className="header__item">Work</li>
+                                <li className="header__item">Notebook</li>
+                                <li className="header__item">Contact</li>
+                                <li className="header__item" onClick={() => setMoreOpen(!moreOpen)}>
+                                    More
+                                    <MoreIcon
+                                        className={moreOpen ? "header__more active" : "header__more"}
+                                    />
+                                </li>
+                            </ul>
                         </div>
 
-                        <ul className="header__list">
-                            <li className="header__item">About</li>
-                            <li className="header__item">Work</li>
-                            <li className="header__item">Notebook</li>
-                            <li className="header__item">Contact</li>
-                            <li className="header__item" onClick={() => setMoreOpen(!moreOpen)}>
-                                More
-                                <MoreIcon
-                                    className={moreOpen ? "header__more active" : "header__more"}
-                                />
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div className="header__links">
-                        <div className="header__link">
-                            <LinkedInIcon/>
-                        </div>
-                        <div className="header__link">
-                            <XIcon/>
-                        </div>
-                        <div className="header__link">
-                            <GithubIcon/>
-                        </div>
-                        <div className="header__separator"></div>
-                        <div className={theme ? "header__theme active" : "header__theme"}
-                             onClick={() => setTheme(!theme)}>
-                            <ThemeIcon/>
+                        <div className="header__links">
+                            <div className="header__link">
+                                <LinkedInIcon/>
+                            </div>
+                            <div className="header__link">
+                                <XIcon/>
+                            </div>
+                            <div className="header__link">
+                                <GithubIcon/>
+                            </div>
+                            <div className="header__separator"></div>
+                            <div className={theme ? "header__theme active" : "header__theme"}
+                                 onClick={() => setTheme(!theme)}>
+                                <ThemeIcon/>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
+        </>
     );
 }
 
