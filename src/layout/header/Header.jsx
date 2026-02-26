@@ -1,7 +1,9 @@
 import React, {useState} from "react"
 import "./Header.css"
 
-import Gradient from "@/assets/images/layout/header/gradient.png"
+import Gradient from "@/layout/header/gradient/Gradient.jsx"
+import More from "@/layout/header/more/More.jsx"
+
 import LogoIcon from "@/assets/images/layout/header/logo.svg?react"
 import MoreIcon from "@/assets/images/layout/header/more.svg?react"
 import LinkedInIcon from "@/assets/images/layout/header/linkedin.svg?react"
@@ -9,16 +11,12 @@ import XIcon from "@/assets/images/layout/header/x.svg?react"
 import GithubIcon from "@/assets/images/layout/header/github.svg?react"
 import ThemeIcon from "@/assets/images/layout/header/theme.svg?react"
 
-
-function Header() {
+function Header({theme, setTheme}) {
     const [moreOpen, setMoreOpen] = useState(false)
-    const [theme, setTheme] = useState(false)
 
     return (
         <>
-            <div className="header__gradient">
-                <img src={Gradient} alt="gradient"/>
-            </div>
+           <Gradient/>
 
             <header className="header">
                 <div className="container">
@@ -59,6 +57,8 @@ function Header() {
                             </div>
                         </div>
                     </div>
+
+                    <More moreOpen={moreOpen} setMoreOpen={setMoreOpen}/>
                 </div>
             </header>
         </>

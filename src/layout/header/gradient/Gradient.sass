@@ -1,0 +1,42 @@
+.header__gradient
+  position: absolute
+  top: 0
+  left: 50%
+  transform: translateX(-50%)
+
+  width: 100%
+  max-width: 1440px
+  overflow: hidden
+
+  z-index: -1
+  pointer-events: none
+
+.header__gradient img
+  width: 100%
+  height: auto
+
+  display: block
+
+  animation: gradientFloat 2s ease-in-out infinite alternate
+  filter: blur(45px) saturate(130%)
+
+@keyframes gradientFloat
+  0%
+    //transform: translate(-5%, -3%) scale(1)
+    transform: scale(1)
+
+  50%
+    //transform: translate(-5%, -3%) scale(1)
+    transform: scale(1.06)
+
+  100%
+    //transform: translate(-5%, -3%) scale(1)
+    transform: scale(1)
+
+@media (max-width: 480px)
+  .header__gradient
+    overflow: hidden
+
+  .header__gradient img
+    width: calc(100% + 2 * 400px)
+    margin-left: -400px

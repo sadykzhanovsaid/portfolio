@@ -1,0 +1,61 @@
+.more {
+  padding: 8px 0;
+  z-index: 10;
+  opacity: 0;
+  display: inline-block;
+  pointer-events: none;
+  transition: all 0.1s ease;
+  position: absolute;
+  transform: translateY(-5px);
+  left: 42%;
+  background-color: var(--header-more);
+  border-radius: 0 0 12px 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--header-text);
+}
+
+.more.active {
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.1s ease;
+  transform: translateY(0);
+}
+
+.more__item {
+  padding: 8px 25px 8px;
+}
+.more__item:hover {
+  cursor: pointer;
+  background-color: var(--header-more-hover);
+}
+
+@media (max-width: 1024px) {
+  .more {
+    left: 44%;
+  }
+}
+@media (max-width: 960px) {
+  .more {
+    left: 46%;
+  }
+}
+@media (max-width: 900px) {
+  .more {
+    left: 48%;
+  }
+}
+@media (max-width: 860px) {
+  .more {
+    left: 50%;
+  }
+}
+@media (max-width: 840px) {
+  .more,
+  .more.active {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=More.css.map */
