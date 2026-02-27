@@ -5,7 +5,7 @@ import GradientImage from "@/assets/images/layout/footer/gradient.png"
 
 function Gradient() {
     return (
-        <div className="header__gradient">
+        <div className="footer__gradient">
             <img src={GradientImage} alt="gradient"/>
         </div>
     );

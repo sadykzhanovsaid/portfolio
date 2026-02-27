@@ -25,26 +25,42 @@ body {
   overflow-x: hidden;
 }
 
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 :root[data-theme=light] {
   --body-bg: #FBFBFB;
   --header-bg: rgba(255, 255, 255, 0.25);
   --header-border: rgba(255, 255, 255, 0.25);
-  --header-logo: rgba(24, 24, 24);
-  --header-text: rgba(24, 24, 24);
-  --header-icons: rgba(24, 24, 24);
-  --header-more: rgba(255, 255, 255, 0.25);
-  --header-more-hover: rgba(255, 255, 255, 1);
+  --header-logo-color: rgba(24, 24, 24);
+  --header-text-color: rgba(24, 24, 24);
+  --header-icons-color: rgba(24, 24, 24);
+  --header-more-bg: rgba(255, 255, 255, 0.25);
+  --header-more-hover-bg: rgba(255, 255, 255, 1);
+  --footer-logo-color: rgba(24, 24, 24);
+  --footer-border: rgb(0, 0, 0, 0.1);
+  --footer-title-color: #181818;
+  --footer-link-first-color: #181818;
+  --footer-link-color: #181818;
 }
 
 :root[data-theme=dark] {
   --body-bg: #0D0D0D;
   --header-bg: rgba(24, 24, 29, 0.3);
   --header-border: rgba(94, 94, 94, 0.3);
-  --header-logo: rgba(255, 255, 255);
-  --header-text: rgba(197, 197, 197);
-  --header-icons: rgba(195, 189, 184);
-  --header-more: rgba(24, 24, 24, 0.6);
-  --header-more-hover: rgba(24, 24, 24, 1);
+  --header-logo-color: rgba(255, 255, 255);
+  --header-text-color: rgba(197, 197, 197);
+  --header-icons-color: rgba(195, 189, 184);
+  --header-more-bg: rgba(24, 24, 24, 0.6);
+  --header-more-hover-bg: rgba(24, 24, 24, 1);
+  --footer-logo-color: rgba(255, 255, 255);
+  --footer-border: rgb(255, 255, 255, 0.1);
+  --footer-title-color: #808080;
+  --footer-link-first-color: #FFFFFF;
+  --footer-link-color: #C5C5C5;
 }
 
 /*# sourceMappingURL=App.css.map */

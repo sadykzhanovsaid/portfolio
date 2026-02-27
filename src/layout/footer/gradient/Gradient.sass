@@ -1,0 +1,42 @@
+.footer__gradient
+  position: absolute
+  bottom: 0
+  left: 50%
+  transform: translateX(-50%) rotateZ(180deg)
+
+  width: 100%
+  max-width: 1440px
+  overflow: hidden
+
+  z-index: -1
+  pointer-events: none
+
+.footer__gradient img
+  width: 100%
+  height: auto
+
+  display: block
+
+  animation: gradientFloatFooter 2s ease-in-out infinite alternate
+  filter: blur(45px) saturate(130%)
+
+@keyframes gradientFloatFooter
+  0%
+    //transform: translate(-5%, -3%) scale(1)
+    transform: scale(1)
+
+  50%
+    //transform: translate(-5%, -3%) scale(1)
+    transform: scale(1.06)
+
+  100%
+    //transform: translate(-5%, -3%) scale(1)
+    transform: scale(1)
+
+@media (max-width: 480px)
+  .footer__gradient
+    overflow: hidden
+
+  .footer__gradient img
+    width: calc(100% + 2 * 400px)
+    margin-left: -400px

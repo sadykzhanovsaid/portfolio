@@ -4,10 +4,13 @@ import "./Layout.css"
 import Header from "./header/Header.jsx"
 import Footer from "./footer/Footer.jsx"
 
-function Layout() {
+function Layout({theme, setTheme}) {
     return (
         <>
-            <Header/>
+            <Header
+                theme={theme}
+                setTheme={setTheme}
+            />
             <Footer/>
         </>
     );

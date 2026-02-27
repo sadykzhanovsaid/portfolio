@@ -8,12 +8,12 @@
   position: absolute;
   transform: translateY(-5px);
   left: 42%;
-  background-color: var(--header-more);
+  background-color: var(--header-more-bg);
   border-radius: 0 0 12px 12px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: var(--header-text);
+  color: var(--header-text-color);
 }
 
 .more.active {
@@ -28,7 +28,7 @@
 }
 .more__item:hover {
   cursor: pointer;
-  background-color: var(--header-more-hover);
+  background-color: var(--header-more-hover-bg);
 }
 
 @media (max-width: 1024px) {

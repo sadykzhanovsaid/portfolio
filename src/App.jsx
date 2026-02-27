@@ -1,8 +1,7 @@
 import {useState, useEffect} from "react"
 import "./assets/styles/App.css"
 
-import Header from "./layout/header/Header.jsx"
-import Home from "@/screens/home/Home.jsx"
+import Layout from "@/layout/Layout.jsx"
 
 
 function App() {
@@ -20,10 +19,12 @@ function App() {
     }, [theme])
 
     return (
-        <>
-            <Header theme={theme} setTheme={setTheme}/>
-            <Home/>
-        </>
+        <div className="App">
+            <Layout
+                theme={theme}
+                setTheme={setTheme}
+            />
+        </div>
     )
 }
 
