@@ -1,0 +1,19 @@
+.buttonDefault {
+  border-radius: 10px;
+  background: var(--contact-message-send-bg);
+  box-shadow: var(--contact-message-send-shadow);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.buttonDefault:hover {
+  background: var(--contact-message-send-bg-hover);
+  box-shadow: var(--contact-message-send-shadow-hover);
+  transition: all 0.3s ease;
+}
+.buttonDefault:active {
+  background: var(--contact-message-send-bg-active);
+  box-shadow: var(--contact-message-send-shadow-active);
+  transition: all 0.3s ease;
+}
+
+/*# sourceMappingURL=Button.css.map */

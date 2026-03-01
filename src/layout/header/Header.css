@@ -26,7 +26,8 @@
 }
 
 .header__logo,
-.header__logo > svg {
+.header__logo > a,
+.header__logo > a > svg {
   width: 40px;
   height: 26px;
   color: var(--header-logo-color);
@@ -39,14 +40,16 @@
   gap: 40px;
 }
 
-.header__item {
+.header__item,
+.header__item a {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: var(--header-text-color);
   cursor: pointer;
 }
-.header__item:last-child {
+.header__item:last-child,
+.header__item a:last-child {
   display: flex;
   align-items: center;
 }

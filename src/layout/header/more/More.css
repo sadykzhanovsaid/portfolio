@@ -26,6 +26,9 @@
 .more__item {
   padding: 8px 25px 8px;
 }
+.more__item > a {
+  color: var(--header-text-color);
+}
 .more__item:hover {
   cursor: pointer;
   background-color: var(--header-more-hover-bg);

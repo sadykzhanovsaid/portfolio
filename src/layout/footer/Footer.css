@@ -23,7 +23,8 @@
 }
 
 .footer__logo,
-.footer__logo > svg {
+.footer__logo > a,
+.footer__logo > a > svg {
   width: 92px;
   height: 60px;
   color: var(--footer-logo-color);
@@ -71,6 +72,9 @@
   font-weight: 400;
   color: var(--footer-link-color);
   cursor: pointer;
+}
+.footer__link > a {
+  color: var(--footer-link-color);
 }
 .footer__link:first-child {
   margin-bottom: 16px;

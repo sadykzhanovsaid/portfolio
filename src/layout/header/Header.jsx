@@ -10,6 +10,7 @@ import LinkedInIcon from "@/assets/images/layout/header/linkedin.svg?react"
 import XIcon from "@/assets/images/layout/header/x.svg?react"
 import GithubIcon from "@/assets/images/layout/header/github.svg?react"
 import ThemeIcon from "@/assets/images/layout/header/theme.svg?react"
+import {Link} from "react-router-dom";
 
 function Header({theme, setTheme}) {
     const [moreOpen, setMoreOpen] = useState(false)
@@ -23,14 +24,14 @@ function Header({theme, setTheme}) {
                     <div className="header__box">
                         <div className="header__content">
                             <div className="header__logo">
-                                <LogoIcon/>
+                                <Link to="/"><LogoIcon/></Link>
                             </div>
 
                             <ul className="header__list">
-                                <li className="header__item">About</li>
-                                <li className="header__item">Work</li>
-                                <li className="header__item">Notebook</li>
-                                <li className="header__item">Contact</li>
+                                <li className="header__item"><Link to="/">About</Link></li>
+                                <li className="header__item"><Link to="/">Work</Link></li>
+                                <li className="header__item"><Link to="/">Notebook</Link></li>
+                                <li className="header__item"><Link to="/contact">Contact</Link></li>
                                 <li className="header__item" onClick={() => setMoreOpen(!moreOpen)}>
                                     More
                                     <MoreIcon
@@ -42,13 +43,13 @@ function Header({theme, setTheme}) {
 
                         <div className="header__links">
                             <div className="header__link">
-                                <LinkedInIcon/>
+                                <a><LinkedInIcon/></a>
                             </div>
                             <div className="header__link">
-                                <XIcon/>
+                                <a><XIcon/></a>
                             </div>
                             <div className="header__link">
-                                <GithubIcon/>
+                                <a><GithubIcon/></a>
                             </div>
                             <div className="header__separator"></div>
                             <div className={theme ? "header__theme active" : "header__theme"}

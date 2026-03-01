@@ -1,7 +1,9 @@
 import {useState, useEffect} from "react"
 import "./assets/styles/App.css"
+import {Route, Routes} from "react-router-dom"
 
 import Layout from "@/layout/Layout.jsx"
+import Contact from "@/screens/contact/Contact.jsx"
 
 
 function App() {
@@ -20,10 +22,13 @@ function App() {
 
     return (
         <div className="App">
-            <Layout
-                theme={theme}
-                setTheme={setTheme}
-            />
+            <Routes>
+                <Route path="/" element={<Layout
+                    theme={theme} setTheme={setTheme}
+                />}>
+                    <Route path="/contact" element={<Contact/>}/>
+                </Route>
+            </Routes>
         </div>
     )
 }

@@ -1,0 +1,88 @@
+.message__wrapper
+  height: 687px
+
+.messageShared
+  padding: 15px
+
+  width: 100%
+  height: 687px
+
+  position: relative
+
+  border-radius: 12px
+  background-color: var(--contact-message-bg)
+  border: 1px solid var(--contact-message-border)
+  box-shadow: var(--contact-message-shadow)
+
+.messageShared__status
+  position: relative
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+  display: flex
+  align-items: center
+  flex-direction: column
+  gap: 15px
+
+.messageSuccess
+  color: var(--contact-message-title-color)
+
+.messageError
+  color: #EF4444
+
+.messageShared__title
+  text-align: center
+  font-family: "Inter", sans-serif
+  font-size: 32px
+  font-weight: 800
+  color: var(--contact-message-title-color)
+
+.messageShared__subtitle
+  text-align: center
+  font-family: "Inter", sans-serif
+  font-size: 16px
+  font-weight: 500
+  color: var(--contact-messageShared-subtitle-color)
+
+.messageShared__other
+  position: absolute
+  width: 95%
+  bottom: 25px
+  left: 50%
+  transform: translateX(-50%)
+
+  display: flex
+  align-items: center
+  flex-direction: column
+  gap: 15px
+
+.messageShared__other-title
+  width: 100%
+  text-align: center
+  font-family: "Inter", sans-serif
+  font-size: 16px
+  font-weight: 500
+  color: var(--contact-messageShared-subtitle-color)
+
+@media (max-width: 480px)
+  .messageShared
+    width: 100%
+    height: 692px
+
+  .messageShared__status
+    transform: translate(-50%, -80%)
+
+  .messageShared__title
+    font-size: 30px
+
+  .messageShared__subtitle
+    font-size: 14px
+
+  .messageShared__other-title
+    font-size: 14px
+
+@media (max-width: 375px)
+  .messageShared
+    width: 100%
+    height: 683px
