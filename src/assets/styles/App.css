@@ -45,6 +45,17 @@ body {
   --footer-title-color: #181818;
   --footer-link-first-color: #181818;
   --footer-link-color: #181818;
+  --hero-title-color: #181818;
+  --contact-message-bg: #F6F6F6;
+  --contact-message-border: #EBEBEB;
+  --contact-message-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  --contact-message-title-color: #181818;
+  --contact-message-title-border: rgb(0, 0, 0, 0.03);
+  --contact-message-input-border: #C5C5C5;
+  --contact-message-textarea-bg: rgb(243, 243, 243);
+  --contact-message-send-bg: linear-gradient(90deg, #1A1A1A 0%, #131313 100%);
+  --contact-message-send-shadow: none;
+  --contact-message-icons-color: rgba(24, 24, 24);
 }
 
 :root[data-theme=dark] {
@@ -61,6 +72,18 @@ body {
   --footer-title-color: #808080;
   --footer-link-first-color: #FFFFFF;
   --footer-link-color: #C5C5C5;
+  --hero-title-color: #FFFFFF;
+  --contact-message-bg: #181818;
+  --contact-message-border: #383737;
+  --contact-message-shadow: 0 19px 30px rgba(0, 0, 0, 0.2);
+  --contact-message-title-color: #FFFFFF;
+  --contact-message-title-border: rgb(255, 255, 255, 0.03);
+  --contact-message-input-border: rgb(255, 255, 255, 0.1);
+  --contact-message-textarea-bg: rgb(13, 13, 13);
+  --contact-message-send-bg: linear-gradient(180deg, #1A1A1A 0%, #131313 100%);
+  --contact-message-send-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.02), inset 0 2px 4px rgba(255, 255, 255, 0.08), 0 7px 4px rgba(0, 0, 0, 0.15);
+  --contact-message-send-shadow-active: inset 0 1px 2px rgba(255, 255, 255, 0.02), inset 0 2px 4px rgba(255, 255, 255, 0.08);
+  --contact-message-icons-color: rgba(195, 189, 184);
 }
 
 /*# sourceMappingURL=App.css.map */

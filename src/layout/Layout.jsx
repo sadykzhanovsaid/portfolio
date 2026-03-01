@@ -3,6 +3,7 @@ import "./Layout.css"
 
 import Header from "./header/Header.jsx"
 import Footer from "./footer/Footer.jsx"
+import Contact from "@/screens/contact/Contact.jsx"
 
 function Layout({theme, setTheme}) {
     return (
@@ -11,6 +12,7 @@ function Layout({theme, setTheme}) {
                 theme={theme}
                 setTheme={setTheme}
             />
+            <Contact/>
             <Footer/>
         </>
     );

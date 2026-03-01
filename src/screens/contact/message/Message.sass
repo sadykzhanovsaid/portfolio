@@ -1,0 +1,251 @@
+.message
+  padding: 60px 0
+
+.message__box
+  display: flex
+  flex-direction: column
+  gap: 60px
+
+.message__form
+  width: 100%
+
+  border-radius: 12px
+  background-color: var(--contact-message-bg)
+  border: 1px solid var(--contact-message-border)
+  box-shadow: var(--contact-message-shadow)
+
+.message__title
+  padding: 20px 0
+
+  position: relative
+
+  text-align: center
+
+  border-bottom: 1px solid var(--contact-message-title-border)
+
+  & > p
+    font-family: "Inter", sans-serif
+    font-size: 16px
+    font-weight: 500
+    color: var(--contact-message-title-color)
+
+.message__form-icons
+  position: absolute
+  top: 50%
+  left: 15px
+  transform: translateY(-50%)
+
+  display: flex
+  align-items: center
+  gap: 10px
+
+.message__form-icon
+  width: 12px
+  height: 12px
+
+  border-radius: 50%
+
+  &:first-child
+    background-color: #F63636
+    border: 1px solid #D62929
+
+  &:nth-child(2)
+    background-color: #F6C136
+    border: 1px solid #CEA435
+
+  &:last-child
+    background-color: #68F636
+    border: 1px solid #53CC28
+
+.message__main
+  padding: 10px 0 20px
+
+  display: flex
+  flex-direction: column
+  gap: 30px
+
+.message__inputs
+  padding: 0 30px
+
+  display: flex
+  flex-direction: column
+  gap: 15px
+
+.message__input
+  padding-bottom: 15px
+
+  display: flex
+  align-items: center
+  gap: 10px
+
+  border-bottom: 1px solid var(--contact-message-input-border)
+
+  &:last-child
+    padding-bottom: 0
+
+    border: none
+
+  & > p
+    font-family: "Inter", sans-serif
+    font-size: 16px
+    font-weight: 500
+    color: var(--contact-message-title-color)
+
+  & > input
+    width: 100%
+
+    background-color: transparent
+
+    font-family: "Inter", sans-serif
+    font-size: 16px
+    font-weight: 400
+    color: #808080
+
+    &::placeholder
+      font-family: "Inter", sans-serif
+      font-size: 16px
+      font-weight: 400
+      color: #808080
+
+.message__line
+  margin: 0 30px
+
+  max-width: 100%
+  height: 1px
+
+  background-color: var(--contact-message-input-border)
+
+.message__textarea
+  resize: none
+
+  margin: 0 30px
+  padding: 25px
+
+  max-width: 100%
+  height: 320px
+
+  border-radius: 12px
+  background-color: var(--contact-message-textarea-bg)
+
+  font-family: "Inter", sans-serif
+  font-size: 16px
+  font-weight: 400
+  color: #808080
+
+  &::placeholder
+    font-family: "Inter", sans-serif
+    font-size: 16px
+    font-weight: 400
+    color: #808080
+
+  &::-webkit-scrollbar
+    width: 0
+
+.message__send-wrapper
+  padding: 0 30px
+
+  display: flex
+  justify-content: end
+
+.message__send
+  padding: 20px 60px
+
+  border-radius: 10px
+  background: var(--contact-message-send-bg)
+  box-shadow: var(--contact-message-send-shadow)
+
+  font-family: "Inter", sans-serif
+  font-size: 18px
+  font-weight: 500
+  color: white
+
+  cursor: pointer
+
+  &:active
+    box-shadow: var(--contact-message-send-shadow-active)
+
+.message__icons
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: 40px
+  flex-wrap: wrap
+
+  & > div
+    display: flex
+    align-items: center
+    gap: 40px
+
+.message__icon,
+.message__icon > svg
+  width: 24px
+  height: 24px
+
+  color: var(--contact-message-icons-color)
+
+  cursor: pointer
+
+@media (max-width: 768px)
+  .message
+    padding: 7.813vw 0 60px
+
+  .message__box
+    gap: 7.813vw
+
+@media (max-width: 640px)
+  .message__box
+    gap: 50.0032px
+
+@media (max-width: 480px)
+  .message__title
+    margin: 0 15px
+
+  .message__main
+    padding: 25px 0
+
+    gap: 25px
+
+  .message__inputs
+    padding: 0 20px
+
+  .message__line
+    margin: 0
+
+  .message__textarea
+    margin: 0 15px
+
+    font-size: 14px
+
+    &::placeholder
+      font-size: 14px
+
+  .message__send-wrapper
+    padding: 0 15px
+    justify-content: center
+
+  .message__send
+    width: 100%
+
+@media (max-width: 450px)
+  .message
+    padding: 35.1585px 0 60px
+
+@media (max-width: 375px)
+  .message__input > input,
+  .message__input > p
+    font-size: 14px
+
+    &::placeholder
+      font-size: 14px
+
+@media (max-width: 340px)
+  .message__title
+    display: flex
+    align-items: center
+    gap: 10px
+
+  .message__form-icons
+    height: 20px
+    position: static
+    transform: translateX(0)
+    gap: 10px
