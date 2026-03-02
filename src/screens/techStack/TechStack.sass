@@ -1,0 +1,58 @@
+.tools
+  padding: 60px 0 120px
+
+.tools__box
+  display: flex
+  flex-direction: column
+  gap: 80px
+
+.devs,
+.apps,
+.games
+  display: flex
+  flex-direction: column
+  gap: 30px
+
+.tools__title
+  font-family: "Inter", sans-serif
+  font-size: 48px
+  font-weight: 800
+  color: var(--tech-title-color)
+
+.tools__cards
+  display: flex
+  align-items: center
+  justify-content: start
+  gap: 15px
+  flex-wrap: wrap
+
+@media (max-width: 768px)
+  .tools
+    padding: 7.813vw 0 15.625vw
+
+  .tools__box
+    gap: 10.417vw
+
+  .devs,
+  .apps,
+  .games
+    gap: 3.906vw
+
+  .tools__title
+    font-size: 6.25vw
+
+@media (max-width: 520px)
+  .tools__title
+    font-size: 32.5px
+
+@media (max-width: 440px)
+  .tools
+    padding: 35.1585px 0 70.3125px
+
+  .tools__box
+    gap: 46.8765px
+
+    .devs,
+    .apps,
+    .games
+      gap: 17.577px

@@ -1,0 +1,280 @@
+.card {
+  padding: 25px;
+  width: calc(33.3333333333% - 10px);
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: end;
+  border-radius: 22px;
+  background-color: var(--tech-card-bg);
+  border: 1px solid var(--tech-card-border);
+  transition: all 0.3s ease;
+}
+
+@media (hover: hover) {
+  .card:hover {
+    cursor: pointer;
+    box-shadow: var(--tech-card-shadow-hover);
+    transition: all 0.3s ease;
+  }
+}
+@media (hover: none) {
+  .card:active {
+    transform: scale(0.9);
+  }
+}
+.card__image {
+  width: 115px;
+  height: 115px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__image > img {
+  width: 115px;
+  height: 115px;
+}
+
+.TailwindCSS > .card__image {
+  background-color: white;
+  border-radius: 27px;
+}
+
+.JavaScript > .card__image > img {
+  border-radius: 27px;
+}
+
+.Sass > .card__image {
+  background-color: white;
+  border-radius: 27px;
+}
+
+.HTML > .card__image {
+  background-color: white;
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.HTML > .card__image > img {
+  width: 90px;
+  height: 90px;
+}
+
+.ReactJS > .card__image {
+  background-color: white;
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ReactJS > .card__image > img {
+  width: 90px;
+  height: 90px;
+}
+
+.Redux > .card__image {
+  background-color: white;
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Redux > .card__image > img {
+  width: 90px;
+  height: 90px;
+}
+
+.Webstorm > .card__image {
+  background-color: white;
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Webstorm > .card__image > img {
+  width: 85px;
+  height: 85px;
+}
+
+.NPM > .card__image {
+  background-color: white;
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.NPM > .card__image > img {
+  width: 90px;
+  height: 90px;
+}
+
+.Emmet > .card__image {
+  background-color: #1c1c20;
+  border-radius: 27px;
+}
+
+.Firebase > .card__image {
+  background-color: white;
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Firebase > .card__image > img {
+  width: 90px;
+  height: 90px;
+}
+
+.JQuery > .card__image {
+  background-color: white;
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.JQuery > .card__image > img {
+  width: 90px;
+  height: 90px;
+}
+
+.ViteJS > .card__image {
+  background-color: white;
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ViteJS > .card__image > img {
+  width: 85px;
+  height: 85px;
+}
+
+.Router > .card__image {
+  background-color: white;
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Router > .card__image > img {
+  width: 90px;
+  height: 90px;
+}
+
+.Clash > .card__image > img,
+.Standoff > .card__image > img,
+.Hill > .card__image > img {
+  border-radius: 22px;
+}
+
+.card__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__title {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--tech-card-title-color);
+}
+
+.card__type {
+  padding: 5px 10px;
+  background-color: var(--tech-card-subtitle-bg);
+  border: 1px solid var(--tech-card-subtitle-border);
+  border-radius: 26px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #808080;
+}
+
+@media (max-width: 850px) {
+  .card {
+    width: calc(50% - 10px);
+    height: 300px;
+  }
+}
+@media (max-width: 640px) {
+  .card {
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    border-radius: 16px;
+  }
+  .card__image {
+    position: static;
+    transform: translate(0, 0);
+    width: 60px;
+    height: 60px;
+  }
+  .card__image > img {
+    width: 60px;
+    height: 60px;
+  }
+  .card__title {
+    font-size: 16px;
+  }
+  .card__type {
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .card__image > img,
+  .HTML > .card__image > img,
+  .ReactJS > .card__image > img,
+  .Redux > .card__image > img,
+  .NPM > .card__image > img,
+  .Firebase > .card__image > img,
+  .JQuery > .card__image > img,
+  .Router > .card__image > img,
+  .Webstorm > .card__image > img,
+  .ViteJS > .card__image > img {
+    width: 60px;
+    height: 60px;
+  }
+  .HTML > .card__image > img,
+  .ReactJS > .card__image > img,
+  .Redux > .card__image > img,
+  .NPM > .card__image > img,
+  .Firebase > .card__image > img,
+  .JQuery > .card__image > img,
+  .Router > .card__image > img,
+  .Webstorm > .card__image > img,
+  .ViteJS > .card__image > img {
+    transform: scale(0.7);
+  }
+  .card__image,
+  .HTML > .card__image,
+  .ReactJS > .card__image,
+  .Redux > .card__image,
+  .NPM > .card__image,
+  .Firebase > .card__image,
+  .JQuery > .card__image,
+  .Emmet > .card__image,
+  .Router > .card__image,
+  .Webstorm > .card__image,
+  .ViteJS > .card__image {
+    border-radius: 17px;
+  }
+  .Clash > .card__image > img,
+  .Standoff > .card__image > img,
+  .Hill > .card__image > img {
+    border-radius: 16px;
+  }
+}
+@media (max-width: 340px) {
+  .card__type {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=Card.css.map */

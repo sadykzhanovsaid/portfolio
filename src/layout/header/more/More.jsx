@@ -11,7 +11,7 @@ function More({moreOpen, setMoreOpen}) {
                     <Link to="/">Bookshelf</Link>
                 </li>
                 <li className="more__item" onClick={() => setMoreOpen(!moreOpen)}>
-                    <Link to="/">Tech Stack</Link>
+                    <Link to="/tech-stack">Tech Stack</Link>
                 </li>
                 <li className="more__item" onClick={() => setMoreOpen(!moreOpen)}>
                     <Link to="/">This UI Kit</Link>

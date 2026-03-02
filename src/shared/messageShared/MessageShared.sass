@@ -46,8 +46,9 @@
   color: var(--contact-messageShared-subtitle-color)
 
 .messageShared__other
-  position: absolute
   width: 95%
+
+  position: absolute
   bottom: 25px
   left: 50%
   transform: translateX(-50%)
@@ -59,6 +60,7 @@
 
 .messageShared__other-title
   width: 100%
+
   text-align: center
   font-family: "Inter", sans-serif
   font-size: 16px
@@ -66,6 +68,9 @@
   color: var(--contact-messageShared-subtitle-color)
 
 @media (max-width: 480px)
+  .message__wrapper
+    height: 692px
+
   .messageShared
     width: 100%
     height: 692px
@@ -83,6 +88,9 @@
     font-size: 14px
 
 @media (max-width: 375px)
+  .message__wrapper
+    height: 683px
+
   .messageShared
     width: 100%
     height: 683px

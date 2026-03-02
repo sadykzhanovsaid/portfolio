@@ -49,8 +49,8 @@
 }
 
 .messageShared__other {
-  position: absolute;
   width: 95%;
+  position: absolute;
   bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
@@ -70,6 +70,9 @@
 }
 
 @media (max-width: 480px) {
+  .message__wrapper {
+    height: 692px;
+  }
   .messageShared {
     width: 100%;
     height: 692px;
@@ -88,6 +91,9 @@
   }
 }
 @media (max-width: 375px) {
+  .message__wrapper {
+    height: 683px;
+  }
   .messageShared {
     width: 100%;
     height: 683px;

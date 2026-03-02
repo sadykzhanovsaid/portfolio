@@ -1,10 +1,10 @@
 import React from "react"
 import "./Footer.css"
+import {Link} from "react-router-dom"
 
 import Gradient from "@/layout/footer/gradient/Gradient.jsx"
 
 import LogoIcon from "@/assets/images/layout/footer/logo.svg?react"
-import {Link} from "react-router-dom";
 
 function Footer() {
     return (
@@ -31,8 +31,8 @@ function Footer() {
                                 <li className="footer__link">Links</li>
                                 <li className="footer__link"><Link to="/">About</Link></li>
                                 <li className="footer__link"><Link to="/">Work</Link></li>
-                                <li className="footer__link"><Link to="/">Tech Stack</Link></li>
-                                <li className="footer__link"><Link to="/contact">Contact</Link></li>
+                                <li className="footer__link"><Link to="/tech-stack" onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>Tech Stack</Link></li>
+                                <li className="footer__link"><Link to="/contact" onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>Contact</Link></li>
                             </ul>
                             <ul className="footer__list">
                                 <li className="footer__link">Elsewhere</li>

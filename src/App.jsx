@@ -4,7 +4,7 @@ import {Route, Routes} from "react-router-dom"
 
 import Layout from "@/layout/Layout.jsx"
 import Contact from "@/screens/contact/Contact.jsx"
-
+import TechStack from "@/screens/techStack/TechStack.jsx"
 
 function App() {
     const [theme, setTheme] = useState(() => {
@@ -27,6 +27,7 @@ function App() {
                     theme={theme} setTheme={setTheme}
                 />}>
                     <Route path="/contact" element={<Contact/>}/>
+                    <Route path="/tech-stack" element={<TechStack/>}/>
                 </Route>
             </Routes>
         </div>

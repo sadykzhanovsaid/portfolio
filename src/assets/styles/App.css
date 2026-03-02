@@ -55,12 +55,19 @@ body {
   --contact-message-textarea-bg: rgb(243, 243, 243);
   --contact-message-send-bg: linear-gradient(90deg, #1A1A1A 0%, #131313 100%);
   --contact-message-send-bg-hover: linear-gradient(90deg, #1A1A1A 0%, #131313 100%);
-  --contact-message-send-bg-active: none;
+  --contact-message-send-bg-active: linear-gradient(180deg, #111 0%, #0c0c0c 100%);
   --contact-message-send-shadow: none;
-  --contact-message-send-shadow-hover: none;
-  --contact-message-send-shadow-active: none;
+  --contact-message-send-shadow-hover: inset 0 1px 2px rgba(255, 255, 255, 0.03), inset 0 2px 6px rgba(255, 255, 255, 0.1), 0 10px 10px rgba(0, 0, 0, 0.25);
+  --contact-message-send-shadow-active: inset 0 1px 2px rgba(255, 255, 255, 0.03), inset 0 2px 6px rgba(255, 255, 255, 0.1), 0 10px 10px rgba(0, 0, 0, 0.25);
   --contact-message-icons-color: rgba(24, 24, 24);
   --contact-messageShared-subtitle-color: #C5C5C5;
+  --tech-title-color: #C5C5C5;
+  --tech-card-bg: #F3F3F3;
+  --tech-card-shadow-hover: 0 6px 14px rgba(0,0,0,.08), 0 0 0 1px rgba(0,0,0,.03);
+  --tech-card-border: #EBEBEB;
+  --tech-card-title-color: #181818;
+  --tech-card-subtitle-bg: rgb(251, 251, 251);
+  --tech-card-subtitle-border: rgb(254, 254, 254);
 }
 
 :root[data-theme=dark] {
@@ -93,6 +100,13 @@ body {
   --contact-message-send-shadow-active: inset 0 2px 6px rgba(0, 0, 0, 0.45), inset 0 1px 2px rgba(255, 255, 255, 0.04);
   --contact-message-icons-color: rgba(195, 189, 184);
   --contact-messageShared-subtitle-color: #808080;
+  --tech-title-color: #808080;
+  --tech-card-bg: #181818;
+  --tech-card-shadow-hover: 0 12px 28px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.05), 0 0 22px rgba(255,255,255,.06);
+  --tech-card-border: #383737;
+  --tech-card-title-color: #FFFFFF;
+  --tech-card-subtitle-bg: rgb(24, 24, 24);
+  --tech-card-subtitle-border: #272525;
 }
 
 /*# sourceMappingURL=App.css.map */
