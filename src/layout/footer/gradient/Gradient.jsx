@@ -1,7 +1,7 @@
 import React from "react"
 import "./Gradient.css"
 
-import GradientImage from "@/assets/images/layout/footer/gradient.png"
+import GradientImage from "@/assets/images/layout/gradient.png"
 
 function Gradient() {
     return (

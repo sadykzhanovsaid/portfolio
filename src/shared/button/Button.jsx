@@ -2,15 +2,14 @@ import React from "react"
 import "./Button.css"
 
 function Button({
-                    onClick,
+                    type,
                     className,
                     title
                 }) {
     return (
         <button
-            type="button"
-            onClick={() => onClick?.()}
-            className={className + " buttonDefault"}
+            type={type}
+            className={`buttonDefault ${className}`}
         >
             {title}
         </button>

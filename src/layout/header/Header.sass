@@ -44,6 +44,7 @@
   font-size: 16px
   font-weight: 500
   color: var(--header-text-color)
+
   cursor: pointer
 
   &:last-child
@@ -53,12 +54,14 @@
 
 .header__more
   transition: all 0.3s ease
+
   transform: rotateX(0deg)
 
   color: var(--header-text-color)
 
   &.active
     transition: all 0.3s ease
+
     transform: rotateX(180deg)
 
 .header__links
@@ -70,23 +73,34 @@
 .header__theme
   width: 24px
   height: 24px
+
   color: var(--header-icons-color)
+
   cursor: pointer
+
+  & > a > svg
+    width: 24px
+    height: 24px
+
+    color: var(--header-icons-color)
 
 .header__theme
   transition: all 0.3s ease
+
   transform: rotate(0deg)
 
   &.active
     transition: all 0.3s ease
+
     transform: rotate(90deg)
 
 .header__separator
   width: 1px
   height: 24px
+
   background-color: rgb(94, 94, 94, 0.3)
 
-@media (max-width: 840px)
+@media (max-width: 880px)
   .header__list
     display: none
 

@@ -29,18 +29,17 @@ function Footer() {
                         <div className="footer__lists">
                             <ul className="footer__list">
                                 <li className="footer__link">Links</li>
-                                <li className="footer__link"><Link to="/">About</Link></li>
-                                <li className="footer__link"><Link to="/">Work</Link></li>
+                                <li className="footer__link"><Link to="/about">About</Link></li>
+                                <li className="footer__link"><Link to="/bookshelf">Bookshelf</Link></li>
                                 <li className="footer__link"><Link to="/tech-stack" onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>Tech Stack</Link></li>
                                 <li className="footer__link"><Link to="/contact" onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>Contact</Link></li>
                             </ul>
                             <ul className="footer__list">
                                 <li className="footer__link">Elsewhere</li>
-                                <li className="footer__link"><Link to="/">Email</Link></li>
-                                <li className="footer__link"><Link to="/">LinkedIn</Link></li>
-                                <li className="footer__link"><Link to="/">GitHub</Link></li>
-                                <li className="footer__link"><Link to="/">Twitter</Link></li>
-                                <li className="footer__link"><Link to="/">Discord</Link></li>
+                                <li className="footer__link"><Link to="/contact">Email</Link></li>
+                                <li className="footer__link"><a target="_blank" href="https://www.linkedin.com/in/said-sadykzhanov-b99235399/">LinkedIn</a></li>
+                                <li className="footer__link"><a target="_blank" href="https://github.com/sadykzhanovsaid">GitHub</a></li>
+                                <li className="footer__link"><a target="_blank" href="https://t.me/sadykzhanovsaid">Telegram</a></li>
                             </ul>
                         </div>
                     </div>

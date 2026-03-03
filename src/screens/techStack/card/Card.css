@@ -265,6 +265,10 @@
   .ViteJS > .card__image {
     border-radius: 17px;
   }
+  .JavaScript > .card__image > img,
+  .Sass > .card__image {
+    border-radius: 17px;
+  }
   .Clash > .card__image > img,
   .Standoff > .card__image > img,
   .Hill > .card__image > img {

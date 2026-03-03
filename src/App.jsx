@@ -28,6 +28,7 @@ function App() {
                 />}>
                     <Route path="/contact" element={<Contact/>}/>
                     <Route path="/tech-stack" element={<TechStack/>}/>
+                    <Route path="*" element={<p>404</p>}/>
                 </Route>
             </Routes>
         </div>

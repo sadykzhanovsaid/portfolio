@@ -1,23 +1,19 @@
 import React, {useState} from "react"
 import "./Header.css"
+import {Link} from "react-router-dom"
 
 import Gradient from "@/layout/header/gradient/Gradient.jsx"
-import More from "@/layout/header/more/More.jsx"
 
 import LogoIcon from "@/assets/images/layout/header/logo.svg?react"
-import MoreIcon from "@/assets/images/layout/header/more.svg?react"
+import TelegramIcon from "@/assets/images/layout/header/telegram.svg?react"
 import LinkedInIcon from "@/assets/images/layout/header/linkedin.svg?react"
-import XIcon from "@/assets/images/layout/header/x.svg?react"
 import GithubIcon from "@/assets/images/layout/header/github.svg?react"
 import ThemeIcon from "@/assets/images/layout/header/theme.svg?react"
-import {Link} from "react-router-dom";
 
 function Header({theme, setTheme}) {
-    const [moreOpen, setMoreOpen] = useState(false)
-
     return (
         <>
-           <Gradient/>
+            <Gradient/>
 
             <header className="header">
                 <div className="container">
@@ -28,28 +24,23 @@ function Header({theme, setTheme}) {
                             </div>
 
                             <ul className="header__list">
-                                <li className="header__item"><Link to="/">About</Link></li>
-                                <li className="header__item"><Link to="/">Work</Link></li>
-                                <li className="header__item"><Link to="/">Notebook</Link></li>
+                                <li className="header__item"><Link to="/about">About</Link></li>
+                                <li className="header__item"><Link to="/bookshelf">Bookshelf</Link></li>
+                                <li className="header__item"><Link to="/tech-stack">Tech Stack</Link></li>
                                 <li className="header__item"><Link to="/contact">Contact</Link></li>
-                                <li className="header__item" onClick={() => setMoreOpen(!moreOpen)}>
-                                    More
-                                    <MoreIcon
-                                        className={moreOpen ? "header__more active" : "header__more"}
-                                    />
-                                </li>
                             </ul>
                         </div>
 
                         <div className="header__links">
                             <div className="header__link">
-                                <a><LinkedInIcon/></a>
+                                <a target="_blank"
+                                   href="https://www.linkedin.com/in/said-sadykzhanov-b99235399/"><LinkedInIcon/></a>
                             </div>
                             <div className="header__link">
-                                <a><XIcon/></a>
+                                <a target="_blank" href="https://t.me/sadykzhanovsaid"><TelegramIcon/></a>
                             </div>
                             <div className="header__link">
-                                <a><GithubIcon/></a>
+                                <a target="_blank" href="https://github.com/sadykzhanovsaid"><GithubIcon/></a>
                             </div>
                             <div className="header__separator"></div>
                             <div className={theme ? "header__theme active" : "header__theme"}
@@ -58,8 +49,6 @@ function Header({theme, setTheme}) {
                             </div>
                         </div>
                     </div>
-
-                    <More moreOpen={moreOpen} setMoreOpen={setMoreOpen}/>
                 </div>
             </header>
         </>

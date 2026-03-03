@@ -1,5 +1,4 @@
 import React from "react"
-import "./Contact.css"
 
 import Hero from "@/shared/hero/Hero.jsx"
 import Message from "@/screens/contact/message/Message.jsx"

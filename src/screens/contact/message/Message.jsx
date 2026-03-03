@@ -7,38 +7,32 @@ import MessageShared from "@/shared/messageShared/MessageShared.jsx"
 import TelegramIcon from "@/assets/images/screens/contact/telegram.svg?react"
 import LinkedInIcon from "@/assets/images/screens/contact/linkedin.svg?react"
 import GithubIcon from "@/assets/images/screens/contact/github.svg?react"
-import XIcon from "@/assets/images/screens/contact/x.svg?react"
 
 function Message() {
-    const [status, setStatus] = useState(null)
+    const [status, setStatus] = useState("idle")
 
     return (
         <section className="message">
             <div className="container">
                 <div className="message__box">
-                    {status === null ? <MessageIdle status={status} setStatus={setStatus}/> :
-                        <MessageShared status={status} setStatus={setStatus}/>}
+                    {status === "idle" ? <MessageIdle status={status} setStatus={setStatus}/> :
+                        <MessageShared status={status}/>}
 
                     <div className="message__icons">
                         <div>
-                            <div className="message__icon"
-                                 onClick={() => setStatus(prev => prev === null ? false : null)}>
+                            <a target="_blank" href="https://t.me/sadykzhanovsaid" className="message__icon">
                                 <TelegramIcon/>
-                            </div>
+                            </a>
 
-                            <div className="message__icon">
+                            <a target="_blank" href="linkedin.com/in/said-sadykzhanov-b99235399" className="message__icon">
                                 <LinkedInIcon/>
-                            </div>
+                            </a>
                         </div>
 
                         <div>
-                            <div className="message__icon">
+                            <a target="_blank" href="https://github.com/sadykzhanovsaid" className="message__icon">
                                 <GithubIcon/>
-                            </div>
-
-                            <div className="message__icon">
-                                <XIcon/>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
