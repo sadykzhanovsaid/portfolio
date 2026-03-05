@@ -146,5 +146,39 @@ export const data = {
             title: "Hill Climb Racing",
             image: "games/HillClimbRacing.jpg"
         }
+    ],
+    books: [
+        {
+            title: "Будь лучшей версией себя",
+            image: "Be.jpg"
+        },
+        {
+            title: "Атомные привычки",
+            image: "AtomicHabits.jpg"
+        },
+        {
+            title: "Филосовский камень",
+            image: "ThePhilosophersStone.jpg"
+        },
+        {
+            title: "Тайная комната",
+            image: "TheSecretRoom.jpg"
+        },
+        {
+            title: "Узник азкабана",
+            image: "ThePrisonerAzkaban.jpg"
+        },
+        {
+            title: "Кубок огня",
+            image: "TheGobletFire.jpg"
+        },
+        {
+            title: "Орден феникса",
+            image: "TheOrderPhoenix.jpg"
+        },
+        {
+            title: "Принц-полукровка",
+            image: "TheHalfBloodPrince.jpg"
+        }
     ]
 }

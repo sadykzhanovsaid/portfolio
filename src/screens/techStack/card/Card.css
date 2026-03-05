@@ -21,6 +21,7 @@
 @media (hover: none) {
   .card:active {
     transform: scale(0.9);
+    transition: all 0.3s ease;
   }
 }
 .card__image {

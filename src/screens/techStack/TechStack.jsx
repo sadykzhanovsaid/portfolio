@@ -17,7 +17,7 @@ function TechStack() {
                             <p className="tools__title">Devs</p>
                             <div className="tools__cards">
                                 {data.devs.map(tool => {
-                                    return <Card key={Math.floor(Math.random() * 1000)} tool={tool}/>
+                                    return <Card key={tool.title} tool={tool}/>
                                 })}
                             </div>
                         </div>
@@ -26,7 +26,7 @@ function TechStack() {
                             <p className="tools__title">Apps</p>
                             <div className="tools__cards">
                                 {data.apps.map(tool => {
-                                    return <Card key={Math.floor(Math.random() * 1000)} tool={tool}/>
+                                    return <Card key={tool.title} tool={tool}/>
                                 })}
                             </div>
                         </div>
@@ -35,7 +35,7 @@ function TechStack() {
                             <p className="tools__title">Games</p>
                             <div className="tools__cards">
                                 {data.games.map(tool => {
-                                    return <Card key={Math.floor(Math.random() * 1000)} tool={tool}/>
+                                    return <Card key={tool.title} tool={tool}/>
                                 })}
                             </div>
                         </div>

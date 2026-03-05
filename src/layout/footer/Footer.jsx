@@ -17,7 +17,7 @@ function Footer() {
                         <div className="footer__about">
                             <div className="footer__brand">
                                 <div className="footer__logo">
-                                    <Link to="/"><LogoIcon/></Link>
+                                    <Link to="/" onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}><LogoIcon/></Link>
                                 </div>
 
                                 <p className="footer__title">Thanks for stopping by ッ</p>
@@ -29,14 +29,14 @@ function Footer() {
                         <div className="footer__lists">
                             <ul className="footer__list">
                                 <li className="footer__link">Links</li>
-                                <li className="footer__link"><Link to="/about">About</Link></li>
-                                <li className="footer__link"><Link to="/bookshelf">Bookshelf</Link></li>
+                                <li className="footer__link"><Link to="/about" onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>About</Link></li>
+                                <li className="footer__link"><Link to="/bookshelf" onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>Bookshelf</Link></li>
                                 <li className="footer__link"><Link to="/tech-stack" onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>Tech Stack</Link></li>
                                 <li className="footer__link"><Link to="/contact" onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>Contact</Link></li>
                             </ul>
                             <ul className="footer__list">
                                 <li className="footer__link">Elsewhere</li>
-                                <li className="footer__link"><Link to="/contact">Email</Link></li>
+                                <li className="footer__link"><Link to="/contact" onClick={() => window.scrollTo({top: 0, behavior: "smooth"})}>Email</Link></li>
                                 <li className="footer__link"><a target="_blank" href="https://www.linkedin.com/in/said-sadykzhanov-b99235399/">LinkedIn</a></li>
                                 <li className="footer__link"><a target="_blank" href="https://github.com/sadykzhanovsaid">GitHub</a></li>
                                 <li className="footer__link"><a target="_blank" href="https://t.me/sadykzhanovsaid">Telegram</a></li>

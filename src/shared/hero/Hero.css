@@ -53,5 +53,10 @@
     font-size: 47.9182px;
   }
 }
+@media (max-width: 300px) {
+  .hero__title {
+    overflow: hidden;
+  }
+}
 
 /*# sourceMappingURL=Hero.css.map */
