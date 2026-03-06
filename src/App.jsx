@@ -6,6 +6,7 @@ import Layout from "@/layout/Layout.jsx"
 import Contact from "@/screens/contact/Contact.jsx"
 import TechStack from "@/screens/techStack/TechStack.jsx"
 import Bookshelf from "@/screens/bookshelf/Bookshelf.jsx"
+import About from "@/screens/about/About.jsx"
 
 function App() {
     const [theme, setTheme] = useState(() => {
@@ -30,6 +31,7 @@ function App() {
                     <Route path="/contact" element={<Contact/>}/>
                     <Route path="/tech-stack" element={<TechStack/>}/>
                     <Route path="/bookshelf" element={<Bookshelf/>}/>
+                    <Route path="/about" element={<About/>}/>
                     <Route path="*" element={<p>404</p>}/>
                 </Route>
             </Routes>

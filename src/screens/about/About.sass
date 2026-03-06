@@ -1,0 +1,183 @@
+.introduction
+  padding: 60px 0 90px
+
+.introduction__box
+  display: flex
+  align-items: start
+  justify-content: space-between
+  gap: 30px
+
+.introduction__text
+  max-width: 600px
+
+  display: flex
+  flex-direction: column
+  gap: 60px
+
+.introduction__contents
+  display: flex
+  flex-direction: column
+  gap: 30px
+
+.introduction__content
+  display: flex
+  flex-direction: column
+  gap: 10px
+
+.introduction__type
+  font-family: "Inter", sans-serif
+  font-size: 16px
+  font-weight: 600
+  color: var(--about-type-color)
+
+.introduction__title
+  font-family: "Inter", sans-serif
+  font-size: 18px
+  font-weight: 400
+  line-height: 158%
+  color: #808080
+
+  & > span
+    color: var(--about-name-color)
+
+  & > img
+    width: 25px
+
+    transform: translate(3px, 6px)
+
+.introduction__link
+  font-family: "Inter", sans-serif
+  font-size: 18px
+  font-weight: 400
+  line-height: 158%
+  color: #808080
+
+  & > a
+    color: var(--about-link-color)
+    text-decoration: underline
+
+.introduction__more
+  display: flex
+  flex-direction: column
+  gap: 15px
+
+  & > p
+    font-family: "Inter", sans-serif
+    font-size: 18px
+    font-weight: 400
+    line-height: 158%
+    color: #808080
+
+.introduction__signature,
+.introduction__signature > svg
+  width: 320px
+  height: 100px
+
+  transform: rotate(-3deg)
+
+  color: #808080
+
+.introduction__touch.content-wrapper
+  display: none
+
+.introduction__other
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 100px
+
+.introduction__image > svg
+  color: transparent
+
+.introduction__touch.other,
+.introduction__touch.content
+  padding: 20px 35px
+
+  display: flex
+  align-items: center
+  gap: 10px
+
+  font-family: "Inter", sans-serif
+  font-size: 18px
+  font-weight: 500
+  color: white
+
+@media (max-width: 800px)
+  .introduction__box
+    flex-wrap: wrap
+    justify-content: center
+    gap: 60px
+
+  .introduction__text
+    max-width: 100%
+    order: 2
+
+  .introduction__touch.other-wrapper
+    display: none
+
+  .introduction__text
+    text-align: center
+
+  .introduction__more
+    align-items: center
+
+  .introduction__touch.content-wrapper
+    width: 100%
+
+    display: flex
+    justify-content: center
+
+  .introduction__touch
+    width: 70%
+
+    justify-content: center
+
+@media (max-width: 768px)
+  .introduction
+    padding: 7.813vw 0 11.719vw
+
+  .introduction__image,
+  .introduction__image > svg
+    width: 44.792vw
+    height: 57.682vw
+
+@media (max-width: 560px)
+  .introduction__image,
+  .introduction__image > svg
+    width: 250.835px
+    height: 323.019px
+
+@media (max-width: 520px)
+  .introduction
+    padding: 40.6276px 0 60.9388px
+
+@media (max-width: 480px)
+  .introduction__text
+    text-align: start
+
+  .introduction__more
+    align-items: start
+
+  .introduction__touch
+    width: 100%
+
+  .introduction__signature,
+  .introduction__signature > svg
+    width: 90%
+    aspect-ratio: auto
+
+    transform: rotate(-3deg)
+
+    color: #808080
+
+@media (max-width: 375px)
+  .introduction__other
+    width: 100%
+
+    align-items: start
+
+@media (max-width: 290px)
+  .introduction__image,
+  .introduction__image > svg
+    width: 100%
+    height: auto
