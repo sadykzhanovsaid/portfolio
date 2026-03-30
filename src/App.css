@@ -9,6 +9,8 @@
     border: none;
     outline: none;
     user-select: none;
+
+    -webkit-tap-highlight-color: transparent;
 }
 
 body::-webkit-scrollbar {

@@ -20,19 +20,6 @@
     border-radius: 67px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-
-    animation: headerFadeDown 1s ease forwards;
-}
-
-@keyframes headerFadeDown {
-    from {
-        transform: translateY(-20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
 }
 
 .header__link {
@@ -167,4 +154,10 @@
 
 .header__link:hover > a {
     color: #1E1E1E;
+}
+
+@media (max-width: 480px) {
+    .header__list:has(.header__link:hover) .header__link > a.active {
+        color: #1E1E1E;
+    }
 }
