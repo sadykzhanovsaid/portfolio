@@ -2,6 +2,7 @@ import React from "react"
 import "./About.css"
 
 import Hero from "@/shared/hero/Hero.jsx"
+import Overview from "@/pages/about/overview/Overview.jsx"
 
 function About() {
     return (
@@ -12,6 +13,8 @@ function About() {
                 title="About"
                 subtitle="I build intuitive and meaningful user experiences on the frontend."
             />
+
+            <Overview/>
         </main>
     );
 }

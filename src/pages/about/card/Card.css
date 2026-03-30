@@ -1,0 +1,77 @@
+.intro-card {
+    padding: 40px 30px;
+
+    position: relative;
+
+    width: calc((100% - 50px) / 3);
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    border: 1px solid #E9E9E9;
+    border-radius: 32px;
+    background-color: #F5F5F5;
+
+    &.hover {
+        cursor: pointer;
+
+        & > .intro-card__title,
+        & > .intro-card__subtitle,
+        & > .intro-card__description {
+            cursor: pointer;
+        }
+    }
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+        flex: 1;
+    }
+
+    &:nth-child(4),
+    &:nth-child(5) {
+        width: calc((100% - 25px) / 2);
+        height: auto;
+    }
+}
+
+.intro-card__title {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: #757575;
+    text-transform: uppercase;
+}
+
+.intro-card__subtitle {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    color: #1E1E1E;
+}
+
+.intro-card__description {
+    margin: auto 0;
+
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #434343;
+}
+
+@media (max-width: 850px) {
+    .intro-card:nth-child(1),
+    .intro-card:nth-child(2),
+    .intro-card:nth-child(3),
+    .intro-card:nth-child(4),
+    .intro-card:nth-child(5) {
+        width: 100%;
+
+        flex: 0 0 auto;
+    }
+}
