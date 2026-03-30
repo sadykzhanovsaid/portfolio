@@ -2,6 +2,7 @@ import React from "react"
 import "./Home.css"
 
 import Hero from "@/shared/hero/Hero.jsx"
+import Links from "@/shared/links/Links.jsx"
 
 function Home() {
     return (
@@ -12,6 +13,8 @@ function Home() {
                 title="Said Sadykzhanov"
                 subtitle="I’m a Frontend Developer focused on crafting fast, accessible, and user-centered web experiences."
             />
+
+            <Links/>
         </main>
     );
 }
