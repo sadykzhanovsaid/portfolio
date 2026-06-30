@@ -8,31 +8,6 @@
     position: fixed;
 }
 
-.header::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
-    mask-image: linear-gradient(
-            to bottom,
-            black 0%,
-            black 40%,
-            transparent 100%
-    );
-
-    -webkit-mask-image: linear-gradient(
-            to bottom,
-            black 0%,
-            black 40%,
-            transparent 100%
-    );
-
-    pointer-events: none;
-}
-
 .header__box {
     display: flex;
     justify-content: center;
