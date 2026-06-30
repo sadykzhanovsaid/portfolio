@@ -13,7 +13,7 @@ function Hero({
         <section className="hero">
             <div className="container">
                 <div className="hero__box">
-                    {type === "heading" ? <div className={`hero__image ${image === "name.png" ? "nameImage" : image === "connect.png" ? "connectImage" : ""}`}><img src={`/hero/${image}`} alt={title}/></div> :
+                    {type === "heading" ? <div className={`hero__image ${image === "name.webp" ? "nameImage" : image === "connect.webp" ? "connectImage" : ""}`}><img src={`/hero/${image}`} alt={title}/></div> :
                         <p className="hero__index">{index}</p>}
                     <p className="hero__title">{title}</p>
                     <p className="hero__description">{description}</p>

@@ -8,7 +8,7 @@ function Home() {
         <main className="home">
             <Hero
                 type="heading"
-                image="name.png"
+                image="name.webp"
                 title="Said Sadykzhanov"
                 description="I’m a UI/UX designer focused on user-centered experiences."
             />

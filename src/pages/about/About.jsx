@@ -10,7 +10,7 @@ function About() {
         <main className="about">
             <Hero
                 type="heading"
-                image="about.png"
+                image="about.webp"
                 title="About"
                 description="Crafting meaningful experiences through design."
             />

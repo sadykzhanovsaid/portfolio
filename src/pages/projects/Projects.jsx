@@ -9,7 +9,7 @@ function Projects() {
         <main className="projects">
             <Hero
                 type="heading"
-                image="projects.png"
+                image="projects.webp"
                 title="Projects"
                 description="Bringing ideas to life, one project at a time."
             />

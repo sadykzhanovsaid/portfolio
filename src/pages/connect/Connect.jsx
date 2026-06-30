@@ -9,7 +9,7 @@ function Connect() {
         <main className="connect">
             <Hero
                 type="heading"
-                image="connect.png"
+                image="connect.webp"
                 title="Let’s Connect"
                 description="Find links to my social media and contact info to connect."
             />
