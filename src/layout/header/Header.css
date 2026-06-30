@@ -9,32 +9,6 @@
     top: 0;
 }
 
-.header::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
-    /* Blur постепенно исчезает вниз */
-    mask-image: linear-gradient(
-            to bottom,
-            black 0%,
-            black 40%,
-            transparent 100%
-    );
-
-    -webkit-mask-image: linear-gradient(
-            to bottom,
-            black 0%,
-            black 40%,
-            transparent 100%
-    );
-
-    pointer-events: none;
-}
-
 .header__box {
     display: flex;
     justify-content: center;
