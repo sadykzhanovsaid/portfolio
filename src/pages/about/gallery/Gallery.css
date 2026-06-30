@@ -1,0 +1,40 @@
+.gallery {
+    animation: Gallery 0.5s ease;
+}
+
+@keyframes Gallery {
+    0% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.gallery__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.gallery__card {
+    width: calc((100% - 25px) / 2);
+    height: 420px;
+
+    background-color: white;
+    border: 1px solid #E9E9E9;
+    border-radius: 32px;
+}
+
+.gallery__card:first-child {
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    .gallery__card {
+        width: 100%;
+    }
+}
