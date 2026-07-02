@@ -1,0 +1,293 @@
+.links__card {
+    overflow: hidden;
+
+    padding: 40px 30px;
+
+    width: calc((100% - 25px) / 2);
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: relative;
+
+    background-color: #F5F5F5;
+    border: 1px solid #E9E9E9;
+    border-radius: 32px;
+
+    transition: all 0.2s ease;
+
+    cursor: pointer;
+}
+
+.email {
+    padding-bottom: 0;
+
+    gap: 20px;
+
+    &.active {
+        background-color: #1D7EF4;
+    }
+
+    & .links__card-image {
+        padding-top: 90px;
+
+        max-width: 320px;
+        width: 100%;
+        height: auto;
+
+        justify-self: center;
+
+        background: linear-gradient(#1D62F0, #19D5FD);
+        border-radius: 68px 68px 0 0;
+    }
+
+    & .links__card-button {
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+.message {
+
+    &.active {
+        background-color: #46E461;
+    }
+
+    & > .links__card-title {
+        width: 55%;
+    }
+
+    & .links__card-image {
+        justify-self: end;
+
+        background: linear-gradient(#64FA7E, #0CBA29);
+    }
+
+    & .links__card-button {
+        align-self: end;
+        justify-self: center;
+    }
+}
+
+.linkedin {
+
+    &.active {
+        background-color: #0A66C2;
+    }
+
+    & > .links__card-title {
+        width: 85%;
+    }
+
+    & .links__card-image {
+        justify-self: start;
+
+        background-color: #0A66C2;
+    }
+
+    & .links__card-button {
+        width: calc(100% - 40px);
+
+        align-self: start;
+        justify-self: start;
+    }
+}
+
+.telegram {
+
+    &.active {
+        background-color: #000B1D;
+    }
+
+    & > .links__card-title {
+        width: 85%;
+    }
+
+    & .links__card-image {
+        justify-self: center;
+
+        background-color: #000B1D;
+    }
+
+    & .links__card-button {
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+.links__card-title {
+    width: calc(100% - 40px);
+
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: #1E1E1E;
+
+    transition: all 0.2s ease;
+
+    &.active {
+        color: white;
+    }
+}
+
+.links__card-content {
+    display: grid;
+}
+
+.links__card-image {
+    grid-area: 1 / 1;
+    transition: opacity 0.2s;
+
+    width: 160px;
+    height: 160px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 32px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+
+    &.active {
+        opacity: 0;
+    }
+}
+
+.links__card-button {
+    pointer-events: none;
+    grid-area: 1 / 1;
+    transition: opacity 0.2s;
+
+    opacity: 0;
+
+    padding: 25px;
+
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #1E1E1E;
+
+    background-color: white;
+    border: 1px solid #D9D9D9;
+    border-radius: 80px;
+
+    &.active {
+        z-index: 99;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    & > svg {
+        width: 36px;
+    }
+}
+
+@media (hover: hover) {
+    .links__card:hover {
+
+        & > .links__card-title {
+            color: white;
+        }
+
+        .links__card-image {
+            opacity: 0;
+        }
+
+        .links__card-button {
+            opacity: 1;
+        }
+    }
+
+    .email:hover {
+        background-color: #1D7EF4;
+    }
+
+    .message:hover {
+        background-color: #46E461;
+    }
+
+    .linkedin:hover {
+        background-color: #0A66C2;
+    }
+
+    .telegram:hover {
+        background-color: #000B1D;
+    }
+
+    .links__card:hover .links__card-button {
+        pointer-events: auto;
+
+        z-index: 99;
+    }
+}
+
+@media (max-width: 960px) {
+    .message {
+
+        & > .links__card-title {
+            min-width: 250px;
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .links__card {
+        width: 100%;
+    }
+
+    .message {
+
+        & > .links__card-title {
+            width: calc((100% - 40px));
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .links__card-button {
+        padding: 20px 5px;
+
+        width: 100%;
+
+        gap: 15px;
+
+        font-size: 22px;
+
+        & > svg {
+            width: 30px;
+        }
+    }
+
+    .message {
+
+        & > .links__card-title {
+            width: calc(100% - 20px);
+
+            transform: translateY(15px);
+        }
+    }
+
+    .linkedin {
+
+        & > .links__card-title {
+            width: calc((100% - 20px));
+        }
+    }
+
+    .telegram {
+
+        & > .links__card-title {
+            width: calc(100% - 20px);
+        }
+    }
+}

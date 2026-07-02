@@ -3,6 +3,7 @@ import "./Quiz.css"
 import "./QuizCard.css"
 
 import Arrow from "../../../assets/arrow.svg?react"
+import Link from "../../../components/link/Link.jsx"
 
 function Quiz() {
     const [active, setActive] = useState(null)
@@ -15,9 +16,7 @@ function Quiz() {
                         className={`quiz__card ${active === 1 ? "active" : ""}`}
                         onClick={() => setActive(active !== 1 ? 1 : null)}
                     >
-                        <div className={`quiz__card-link ${active === 1 ? "active" : ""}`}>
-                            <Arrow/>
-                        </div>
+                        <Link active={active} index={1}/>
 
                         <p className="quiz__card-type">About me</p>
 
@@ -35,9 +34,7 @@ function Quiz() {
                         className={`quiz__card ${active === 2 ? "active" : ""}`}
                         onClick={() => setActive(active !== 2 ? 2 : null)}
                     >
-                        <div className={`quiz__card-link ${active === 2 ? "active" : ""}`}>
-                            <Arrow/>
-                        </div>
+                        <Link active={active} index={2}/>
 
                         <p className="quiz__card-type">What I Do</p>
 
@@ -55,9 +52,7 @@ function Quiz() {
                         className={`quiz__card ${active === 3 ? "active" : ""}`}
                         onClick={() => setActive(active !== 3 ? 3 : null)}
                     >
-                        <div className={`quiz__card-link ${active === 3 ? "active" : ""}`}>
-                            <Arrow/>
-                        </div>
+                        <Link active={active} index={3}/>
 
                         <p className="quiz__card-type">WHERE I AM FROM</p>
 
@@ -75,9 +70,7 @@ function Quiz() {
                         className={`quiz__card ${active === 4 ? "active" : ""}`}
                         onClick={() => setActive(active !== 4 ? 4 : null)}
                     >
-                        <div className={`quiz__card-link ${active === 4 ? "active" : ""}`}>
-                            <Arrow/>
-                        </div>
+                        <Link active={active} index={4}/>
 
                         <p className="quiz__card-type">My Design Philosophy</p>
 
@@ -95,9 +88,7 @@ function Quiz() {
                         className={`quiz__card ${active === 5 ? "active" : ""}`}
                         onClick={() => setActive(active !== 5 ? 5 : null)}
                     >
-                        <div className={`quiz__card-link ${active === 5 ? "active" : ""}`}>
-                            <Arrow/>
-                        </div>
+                        <Link active={active} index={5}/>
 
                         <p className="quiz__card-type">Outside the Office</p>
 
