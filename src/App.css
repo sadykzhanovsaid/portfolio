@@ -24,3 +24,7 @@
 body::-webkit-scrollbar {
     width: 0;
 }
+
+body {
+    padding-top: env(safe-area-inset-top);
+}
