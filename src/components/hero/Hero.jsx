@@ -19,7 +19,7 @@ function Hero({
                     <p className="hero__description">{description}</p>
                     {type === "project" ? <div className="hero__stacks">
                         {screens.map((screen, index) => {
-                            return <button key={index} className="hero__stack">{screen}</button>
+                            return <button tabindex="0" key={index} className="hero__stack">{screen}</button>
                         })}
                     </div> : null}
                 </div>
