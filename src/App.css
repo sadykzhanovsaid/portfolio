@@ -24,3 +24,10 @@
 body::-webkit-scrollbar {
     width: 0;
 }
+
+html,
+body,
+#root {
+    min-height: 100%;
+    background: #fff;
+}
