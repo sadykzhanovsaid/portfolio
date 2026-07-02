@@ -24,3 +24,7 @@
 body::-webkit-scrollbar {
     width: 0;
 }
+
+#root {
+    min-height: 100dvh;
+}
