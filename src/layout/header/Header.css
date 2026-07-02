@@ -7,8 +7,6 @@
 
     position: fixed;
     top: 0;
-
-    padding-top: env(safe-area-inset-top);
 }
 
 .header__box {
