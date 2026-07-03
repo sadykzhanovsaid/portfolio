@@ -4,12 +4,6 @@
     padding: 25px 0;
 
     width: 100%;
-
-    position: fixed;
-    top: 0;
-
-    padding-top: env(safe-area-inset-top, 0px);
-    height: calc(60px + env(safe-area-inset-top, 0px)); /* 60px — чистая высота хедера */
 }
 
 .header__box {
