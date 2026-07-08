@@ -22,6 +22,10 @@ function Project() {
             <Overview
                 stacksImage={project.stacksImage}
             />
+            <Context
+                context={project.context}
+                projectImages={project.projectImages}
+            />
         </main>
     );
 }
