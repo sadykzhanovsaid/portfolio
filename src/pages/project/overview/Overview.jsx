@@ -18,8 +18,8 @@ function Overview({stacksImage}) {
                     <div className="overview__stacks">
                         {stacksImage.map((stack, index) => {
                             return (
-                                <div key={index} className={`overview__stack ${stack.slice(0, -4)}`}>
-                                    <img src={`/stacks/${stack}`} alt={stack.slice(0, -4)}/>
+                                <div key={index} className={`overview__stack ${stack}`}>
+                                    <img src={`/stacks/${stack}.svg`} alt={stack}/>
                                 </div>
                             )
                         })}

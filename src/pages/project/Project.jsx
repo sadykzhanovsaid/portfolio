@@ -3,6 +3,7 @@ import "./Project.css"
 
 import Hero from "../../components/hero/Hero.jsx"
 import Overview from "./overview/Overview.jsx"
+import Context from "./context/Context.jsx"
 
 import {projects} from "../../../projects.jsx"
 

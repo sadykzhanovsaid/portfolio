@@ -4,7 +4,7 @@ export const projects = [
         title: "Zara",
         description: "A fashion store with immersive animations for a premium shopping experience.",
         screens: ["Desktop", "Tablet", "Mobile"],
-        stacksImage: [],
+        stacksImage: ["vite", "react", "webstorm"],
         context: [],
         projectImages: [],
         type: "full", // mobile - desktop
