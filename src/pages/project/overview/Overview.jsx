@@ -15,7 +15,7 @@ function Overview({stacksImage}) {
                         </div>
                     </div>
 
-                    <div className="overview__stacks">
+                    <div className={`overview__stacks length${stacksImage.length}`}>
                         {stacksImage.map((stack, index) => {
                             return (
                                 <div key={index} className={`overview__stack ${stack}`}>
