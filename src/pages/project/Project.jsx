@@ -4,6 +4,7 @@ import "./Project.css"
 import Hero from "../../components/hero/Hero.jsx"
 import Overview from "./overview/Overview.jsx"
 import Context from "./context/Context.jsx"
+import Connect from "../../components/connect/Connect.jsx"
 
 import {projects} from "../../../projects.jsx"
 
@@ -26,6 +27,7 @@ function Project() {
                 context={project.context}
                 projectImages={project.projectImages}
             />
+            <Connect/>
         </main>
     );
 }

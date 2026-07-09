@@ -1,4 +1,16 @@
-.context {}
+.context {
+    animation: Context 0.5s ease;
+}
+
+@keyframes Context {
+    0% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
 
 .context__box {
     display: flex;
