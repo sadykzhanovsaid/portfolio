@@ -1,12 +1,22 @@
 import React from "react"
 import "./Cards.css"
 
+import Card from "../card/Card.jsx"
+
+import {projects} from "../../../../projects.jsx"
+
 function Cards() {
     return (
-        <section className="cardsProjects">
+        <section className="cards">
             <div className="container">
-                <div className="cardsProjects__box">
-
+                <div className="cards__box">
+                    {projects.map((project) => {
+                        return <Card
+                            key={project.title}
+                            title={project.title}
+                            description={project.description}
+                        />
+                    })}
                 </div>
             </div>
         </section>

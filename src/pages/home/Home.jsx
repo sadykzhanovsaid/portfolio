@@ -2,6 +2,7 @@ import React from "react"
 import "./Home.css"
 
 import Hero from "../../components/hero/Hero.jsx"
+import Cards from "../projects/cards/Cards.jsx"
 
 function Home() {
     return (
@@ -12,6 +13,7 @@ function Home() {
                 title="Said Sadykzhanov"
                 description="I’m a UI/UX designer focused on user-centered experiences."
             />
+            <Cards/>
         </main>
     );
 }

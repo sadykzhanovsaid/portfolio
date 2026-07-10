@@ -1,0 +1,13 @@
+.cards {
+    animation: Cards 0.5s ease;
+}
+
+@keyframes Cards {
+    0% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

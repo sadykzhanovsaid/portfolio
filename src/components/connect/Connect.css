@@ -1,4 +1,6 @@
 .connectComponent {
+    padding-top: 25px;
+
     animation: Connect 0.5s ease;
 }
 

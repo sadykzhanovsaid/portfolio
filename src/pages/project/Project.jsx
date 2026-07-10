@@ -7,9 +7,13 @@ import Context from "./context/Context.jsx"
 import Connect from "../../components/connect/Connect.jsx"
 
 import {projects} from "../../../projects.jsx"
+import {useParams} from "react-router-dom";
 
 function Project() {
-    const project = projects[0]
+    const { title } = useParams()
+    const project = projects.find((project) => {
+        return project.title.toLowerCase() === title.toLowerCase()
+    })
 
     return (
         <main className="project">
@@ -26,6 +30,7 @@ function Project() {
             <Context
                 context={project.context}
                 projectImages={project.projectImages}
+                typeInterior={project.typeInterior}
             />
             <Connect/>
         </main>

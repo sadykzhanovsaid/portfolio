@@ -45,7 +45,8 @@ function Links() {
                                 <Email/>
                             </div>
 
-                            <a target="_blank" href="mailto:saidsadykzhanov1@gmail.com" className={`links__card-button ${active === 1 ? "active" : ""}`}>
+                            <a target="_blank" href="mailto:saidsadykzhanov1@gmail.com"
+                               className={`links__card-button ${active === 1 ? "active" : ""}`}>
                                 <EmailIcon/>
                                 Email Me
                             </a>
@@ -68,7 +69,8 @@ function Links() {
                                 <Message/>
                             </div>
 
-                            <a href="tel:+996708882668" className={`links__card-button ${active === 2 ? "active" : ""}`}>
+                            <a href="tel:+996708882668"
+                               className={`links__card-button ${active === 2 ? "active" : ""}`}>
                                 <MessageIcon/>
                                 Send a Message
                             </a>
@@ -88,7 +90,8 @@ function Links() {
                                 <Linkedin/>
                             </div>
 
-                            <a target="_blank" href="https://www.linkedin.com/in/said-sadykzhanov-b99235399/" className={`links__card-button ${active === 3 ? "active" : ""}`}>
+                            <a target="_blank" href="https://www.linkedin.com/in/said-sadykzhanov-b99235399/"
+                               className={`links__card-button ${active === 3 ? "active" : ""}`}>
                                 <LinkedinIcon/>
                                 Let’s Connect
                             </a>
@@ -111,13 +114,15 @@ function Links() {
                                 <Telegram/>
                             </div>
 
-                            <a target="_blank" href="https://t.me/sadykzhanovsaid" className={`links__card-button ${active === 4 ? "active" : ""}`}>
+                            <a target="_blank" href="https://t.me/sadykzhanovsaid"
+                               className={`links__card-button ${active === 4 ? "active" : ""}`}>
                                 <TelegramIcon/>
                                 Chat on Telegram
                             </a>
                         </div>
 
-                        <p className={`links__card-title ${active === 4 ? "active" : ""}`}>Chat with me on Telegram for a quick response.</p>
+                        <p className={`links__card-title ${active === 4 ? "active" : ""}`}>Chat with me on Telegram for
+                            a quick response.</p>
                     </div>
                 </div>
             </div>

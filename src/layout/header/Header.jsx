@@ -15,6 +15,10 @@ function Header() {
                 : pathname.slice(1);
 
         setActive(page);
+
+        if (pathname.includes("projects")) {
+            return setActive("projects")
+        }
     }, [pathname])
 
     return (

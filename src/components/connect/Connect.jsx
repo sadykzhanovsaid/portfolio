@@ -10,7 +10,7 @@ function Connect() {
                 <div className="connect__box">
                     <p className="connect__title">Let’s Connect</p>
                     <div className="connect__links">
-                        <a  target="_blank" href="mailto:saidsadykzhanov1@gmail.com">
+                        <a target="_blank" href="mailto:saidsadykzhanov1@gmail.com">
                             <button className="connect__link">
                                 Email Me
                                 <Arrow/>
