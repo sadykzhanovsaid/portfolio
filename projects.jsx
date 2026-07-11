@@ -1,7 +1,7 @@
 export const projects = [
     {
         id: 1,
-        title: "Zara",
+        title: "ZARA",
         description: "A fashion store with immersive animations for a premium shopping experience.",
         screens: ["Desktop", "Tablet", "Mobile"],
         stacksImage: ["figma", "react", "vite", "webstorm"],
