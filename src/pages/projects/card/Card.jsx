@@ -10,7 +10,7 @@ function Card({title, description, projectImage, typeAppearance}) {
             <div className={`card ${typeAppearance}`}>
                 <Link/>
 
-                <p className="card__title">{title}</p>
+                <p className="card__title">{title} lorem</p>
 
                 <p className="card__description">{description}</p>
 
