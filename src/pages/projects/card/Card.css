@@ -12,6 +12,10 @@
     border-radius: 32px;
 
     cursor: pointer;
+
+    &.mobile {
+        padding-bottom: 0;
+    }
 }
 
 .card__title {
@@ -28,10 +32,9 @@
     color: #757575;
 }
 
-.card__image {
+.card__image.mobile {
+    max-width: 210px;
     width: 100%;
-    height: 340px;
 
-    border-radius: 18px;
-    background-color: #f9f9f9;
+    align-self: center;
 }

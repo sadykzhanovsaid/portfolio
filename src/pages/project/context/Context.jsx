@@ -1,7 +1,7 @@
 import React from "react"
 import "./Context.css"
 
-function Context({context, projectImages, typeInterior}) {
+function Context({title, context, projectImages, typeInterior}) {
     return (
         <section className="context">
             <div className="container">
@@ -11,13 +11,13 @@ function Context({context, projectImages, typeInterior}) {
                     {typeInterior === "desktop" || typeInterior === "full" ?
                         <>
                             <div className="context__image-desktop">
-                                <img src={`/screens/zara/${projectImages[0]}.webp`} alt="project image"/>
+                                <img src={`/screens/${title.toLowerCase()}/${projectImages[0]}.webp`} alt="project image"/>
                             </div>
 
                             <p className="context__title">{context[1]}</p>
 
                             <div className="context__image-desktop">
-                                <img src={`/screens/zara/${projectImages[1]}.webp`} alt="project image"/>
+                                <img src={`/screens/${title.toLowerCase()}/${projectImages[1]}.webp`} alt="project image"/>
                             </div>
                         </> : null
                     }
@@ -28,11 +28,11 @@ function Context({context, projectImages, typeInterior}) {
                         <>
                             <div className="context__images-mobile">
                                 <div className="context__image-mobile">
-                                    <img src={`/screens/zara/${projectImages[typeInterior === "mobile" ? 0 : 2]}.webp`} alt="project image"/>
+                                    <img src={`/screens/${title.toLowerCase()}/${projectImages[typeInterior === "mobile" ? 0 : 2]}.webp`} alt="project image"/>
                                 </div>
 
                                 <div className="context__image-mobile">
-                                    <img src={`/screens/zara/${projectImages[typeInterior === "mobile" ? 1 : 3]}.webp`} alt="project image"/>
+                                    <img src={`/screens/${title.toLowerCase()}/${projectImages[typeInterior === "mobile" ? 1 : 3]}.webp`} alt="project image"/>
                                 </div>
                             </div>
                         </> : null

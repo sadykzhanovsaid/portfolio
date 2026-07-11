@@ -15,6 +15,8 @@ function Cards() {
                             key={project.title}
                             title={project.title}
                             description={project.description}
+                            projectImage={project.projectImage}
+                            typeAppearance={project.typeAppearance}
                         />
                     })}
                 </div>

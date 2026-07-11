@@ -28,6 +28,7 @@ function Project() {
                 stacksImage={project.stacksImage}
             />
             <Context
+                title={project.title}
                 context={project.context}
                 projectImages={project.projectImages}
                 typeInterior={project.typeInterior}
