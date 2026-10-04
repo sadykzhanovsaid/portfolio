@@ -1,5 +1,6 @@
 import React from "react"
 import "./Project.css"
+import {useParams} from "react-router-dom"
 
 import Hero from "../../components/hero/Hero.jsx"
 import Overview from "./overview/Overview.jsx"
@@ -7,7 +8,6 @@ import Context from "./context/Context.jsx"
 import Connect from "../../components/connect/Connect.jsx"
 
 import {projects} from "../../../projects.jsx"
-import {useParams} from "react-router-dom";
 
 function Project() {
     const { title } = useParams()

@@ -14,9 +14,8 @@ function Card({title, description, projectImage, typeAppearance}) {
 
                 <p className="card__description">{description}</p>
 
-                {/*<div className={`card__image ${typeAppearance}`}>*/}
-                    <img className={`card__image ${typeAppearance}`} src={`/screens/${title.toLowerCase()}/${projectImage}.webp`} alt={title}/>
-                {/*</div>*/}
+                <img className={`card__image ${typeAppearance}`}
+                     src={`/screens/${title.toLowerCase()}/${projectImage}.webp`} alt={title}/>
             </div>
         </NavLink>
     );

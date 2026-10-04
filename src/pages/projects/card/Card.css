@@ -12,10 +12,6 @@
     border-radius: 32px;
 
     cursor: pointer;
-
-    &.mobile {
-        padding-bottom: 0;
-    }
 }
 
 .card__title {
@@ -30,11 +26,4 @@
     font-size: 20px;
     line-height: 120%;
     color: #757575;
-}
-
-.card__image.mobile {
-    max-width: 210px;
-    width: 100%;
-
-    align-self: center;
 }
